@@ -1,0 +1,89 @@
+[2022-03-01 19:36:27,311] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: dag_outliers2.read_process_write_file manual__2022-03-01T19:36:21.887733+00:00 [queued]>
+[2022-03-01 19:36:27,337] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: dag_outliers2.read_process_write_file manual__2022-03-01T19:36:21.887733+00:00 [queued]>
+[2022-03-01 19:36:27,337] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-01 19:36:27,337] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-01 19:36:27,338] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-01 19:36:27,376] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): read_process_write_file> on 2022-03-01 19:36:21.887733+00:00
+[2022-03-01 19:36:27,393] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'dag_outliers2', 'read_process_write_file', 'manual__2022-03-01T19:36:21.887733+00:00', '--job-id', '49', '--raw', '--subdir', 'DAGS_FOLDER/dag_outliers.py', '--cfg-path', '/tmp/tmpognv95au', '--error-file', '/tmp/tmpitj3yjp5']
+[2022-03-01 19:36:27,400] {standard_task_runner.py:77} INFO - Job 49: Subtask read_process_write_file
+[2022-03-01 19:36:27,382] {standard_task_runner.py:52} INFO - Started process 3153 to run task
+[2022-03-01 19:36:27,539] {logging_mixin.py:109} INFO - Running <TaskInstance: dag_outliers2.read_process_write_file manual__2022-03-01T19:36:21.887733+00:00 [running]> on host 083589a500f4
+[2022-03-01 19:36:27,604] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/models/xcom.py:437: SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` attribute is not set to True.  This can have significant performance implications including some performance degradations in comparison to prior SQLAlchemy versions.  Set this attribute to True if this type object's state is safe to use in a cache key, or False to disable this warning. (Background on this error at: https://sqlalche.me/e/14/cprf)
+  return query.delete()
+
+[2022-03-01 19:36:27,615] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/models/renderedtifields.py:126: SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` attribute is not set to True.  This can have significant performance implications including some performance degradations in comparison to prior SQLAlchemy versions.  Set this attribute to True if this type object's state is safe to use in a cache key, or False to disable this warning. (Background on this error at: https://sqlalche.me/e/14/cprf)
+  session.merge(self)
+
+[2022-03-01 19:36:27,627] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/models/renderedtifields.py:162: SAWarning: Coercing Subquery object into a select() for use in IN(); please pass a select() construct explicitly
+  tuple_(cls.dag_id, cls.task_id, cls.execution_date).notin_(subq1),
+
+[2022-03-01 19:36:27,632] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/models/renderedtifields.py:163: SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` attribute is not set to True.  This can have significant performance implications including some performance degradations in comparison to prior SQLAlchemy versions.  Set this attribute to True if this type object's state is safe to use in a cache key, or False to disable this warning. (Background on this error at: https://sqlalche.me/e/14/cprf)
+  ).delete(synchronize_session=False)
+
+[2022-03-01 19:36:27,640] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=dag_outliers2
+AIRFLOW_CTX_TASK_ID=read_process_write_file
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-01T19:36:21.887733+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-03-01T19:36:21.887733+00:00
+[2022-03-01 19:36:29,080] {logging_mixin.py:109} INFO - read success
+[2022-03-01 19:36:29,247] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:29,249] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:29,596] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:29,597] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:32,243] {logging_mixin.py:109} INFO - read success
+[2022-03-01 19:36:32,359] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:32,364] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:32,526] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:32,528] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:33,052] {logging_mixin.py:109} INFO - read success
+[2022-03-01 19:36:33,167] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:33,169] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:33,260] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:33,268] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:33,674] {logging_mixin.py:109} INFO - read success
+[2022-03-01 19:36:33,775] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:33,777] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:33,838] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:33,839] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:34,357] {logging_mixin.py:109} INFO - read success
+[2022-03-01 19:36:34,453] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:34,454] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:34,520] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:34,521] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:34,878] {logging_mixin.py:109} INFO - read success
+[2022-03-01 19:36:34,973] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:34,974] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:35,038] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:35,039] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:35,615] {logging_mixin.py:109} INFO - read success
+[2022-03-01 19:36:35,706] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:35,707] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:35,787] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:35,789] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:36,230] {logging_mixin.py:109} INFO - read success
+[2022-03-01 19:36:36,384] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:36,385] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:36,486] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:36,488] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:36,877] {logging_mixin.py:109} INFO - read success
+[2022-03-01 19:36:36,998] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:37,000] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:37,130] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:37,135] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:37,651] {logging_mixin.py:109} INFO - read success
+[2022-03-01 19:36:37,755] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:37,757] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:37,892] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:37,894] {category.py:234} INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+[2022-03-01 19:36:38,193] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-01 19:36:38,208] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=dag_outliers2, task_id=read_process_write_file, execution_date=20220301T193621, start_date=20220301T193627, end_date=20220301T193638
+[2022-03-01 19:36:38,254] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-01 19:36:38,268] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/models/dag.py:1079: SADeprecationWarning: Query.value() is deprecated and will be removed in a future release.  Please use Query.with_entities() in combination with Query.scalar() (deprecated since: 1.4)
+  return qry.value(DagModel.is_paused)
+
+[2022-03-01 19:36:38,268] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/models/dag.py:1079: SADeprecationWarning: Query.values() is deprecated and will be removed in a future release.  Please use Query.with_entities() (deprecated since: 1.4)
+  return qry.value(DagModel.is_paused)
+

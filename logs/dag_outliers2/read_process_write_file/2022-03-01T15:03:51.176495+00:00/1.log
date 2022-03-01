@@ -1,0 +1,39 @@
+[2022-03-01 15:03:53,536] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: dag_outliers2.read_process_write_file manual__2022-03-01T15:03:51.176495+00:00 [queued]>
+[2022-03-01 15:03:53,546] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: dag_outliers2.read_process_write_file manual__2022-03-01T15:03:51.176495+00:00 [queued]>
+[2022-03-01 15:03:53,547] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-01 15:03:53,547] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-01 15:03:53,547] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-01 15:03:53,564] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): read_process_write_file> on 2022-03-01 15:03:51.176495+00:00
+[2022-03-01 15:03:53,570] {standard_task_runner.py:52} INFO - Started process 1424 to run task
+[2022-03-01 15:03:53,578] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'dag_outliers2', 'read_process_write_file', 'manual__2022-03-01T15:03:51.176495+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/dag_outliers.py', '--cfg-path', '/tmp/tmpa14c8crn', '--error-file', '/tmp/tmp87n789jz']
+[2022-03-01 15:03:53,579] {standard_task_runner.py:77} INFO - Job 14: Subtask read_process_write_file
+[2022-03-01 15:03:53,640] {logging_mixin.py:109} INFO - Running <TaskInstance: dag_outliers2.read_process_write_file manual__2022-03-01T15:03:51.176495+00:00 [running]> on host eff5a7a46f32
+[2022-03-01 15:03:53,682] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/models/xcom.py:437: SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` attribute is not set to True.  This can have significant performance implications including some performance degradations in comparison to prior SQLAlchemy versions.  Set this attribute to True if this type object's state is safe to use in a cache key, or False to disable this warning. (Background on this error at: https://sqlalche.me/e/14/cprf)
+  return query.delete()
+
+[2022-03-01 15:03:53,695] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/models/renderedtifields.py:126: SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` attribute is not set to True.  This can have significant performance implications including some performance degradations in comparison to prior SQLAlchemy versions.  Set this attribute to True if this type object's state is safe to use in a cache key, or False to disable this warning. (Background on this error at: https://sqlalche.me/e/14/cprf)
+  session.merge(self)
+
+[2022-03-01 15:03:53,707] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/models/renderedtifields.py:162: SAWarning: Coercing Subquery object into a select() for use in IN(); please pass a select() construct explicitly
+  tuple_(cls.dag_id, cls.task_id, cls.execution_date).notin_(subq1),
+
+[2022-03-01 15:03:53,712] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/models/renderedtifields.py:163: SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` attribute is not set to True.  This can have significant performance implications including some performance degradations in comparison to prior SQLAlchemy versions.  Set this attribute to True if this type object's state is safe to use in a cache key, or False to disable this warning. (Background on this error at: https://sqlalche.me/e/14/cprf)
+  ).delete(synchronize_session=False)
+
+[2022-03-01 15:03:53,719] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=dag_outliers2
+AIRFLOW_CTX_TASK_ID=read_process_write_file
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-01T15:03:51.176495+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-03-01T15:03:51.176495+00:00
+[2022-03-01 15:04:51,930] {local_task_job.py:154} INFO - Task exited with return code Negsignal.SIGKILL
+[2022-03-01 15:04:52,243] {taskinstance.py:1282} INFO - Marking task as FAILED. dag_id=dag_outliers2, task_id=read_process_write_file, execution_date=20220301T150351, start_date=20220301T150353, end_date=20220301T150452
+[2022-03-01 15:04:52,299] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-03-01 15:04:52,319] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/models/dag.py:1079: SADeprecationWarning: Query.value() is deprecated and will be removed in a future release.  Please use Query.with_entities() in combination with Query.scalar() (deprecated since: 1.4)
+  return qry.value(DagModel.is_paused)
+
+[2022-03-01 15:04:52,319] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/models/dag.py:1079: SADeprecationWarning: Query.values() is deprecated and will be removed in a future release.  Please use Query.with_entities() (deprecated since: 1.4)
+  return qry.value(DagModel.is_paused)
+
