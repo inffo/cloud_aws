@@ -18,7 +18,7 @@ def read_process_write_file(year_csv):
     from matplotlib.backends.backend_pdf import PdfPages
     import boto3
 
-    df1 = pd.read_csv(year_csv,nrows=20000)
+    df1 = pd.read_csv(year_csv,nrows=2000000)
 
     print('read success')
     year_file = year_csv.split('/')[-1]
@@ -48,8 +48,12 @@ def read_process_write_file(year_csv):
 
     database_connection = sqlalchemy.create_engine('postgresql://{0}:{1}@{2}/{3}'.format(user, password,host, dbname)).connect()
 
+    #upload to rds postgres
     df1.to_sql(con=database_connection, name='flights', if_exists='replace',index=False)
 
+    #upload to s3
+    df1.to_csv('s3://airline-outliers/dataframes/df{}.csv'.format(year_file), index=False)
+    
     df2 = df1.reset_index()
 
     df2 = df2.sort_values('FL_DATE',ascending=True)
