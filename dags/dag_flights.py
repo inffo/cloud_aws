@@ -84,7 +84,7 @@ default_args = {
 with DAG(
     dag_id='dag_flights',
     default_args=default_args,
-    schedule_interval='@daily',
+    schedule_interval='@yearly',
     description='ETL pipeline for processing users'
 
 ) as dag:
